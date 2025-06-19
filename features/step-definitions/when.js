@@ -4,7 +4,6 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 
 
-
 When("Я нажимаю на {string} в {string}", async function (element, location) {
 
     const object = this.pageObjects[location];
