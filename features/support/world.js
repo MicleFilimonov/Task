@@ -16,7 +16,7 @@ import Auth  from '../pageobjects/auth.js';
 import MainHeader  from '../pageobjects/mainheader.js';
 import Profile  from '../pageobjects/profile.js';
 
-class CustomWorld {
+export default class World {
   constructor() {
     this.pageObjects = {
       "Верхнее меню":   new Menu(),
@@ -32,9 +32,6 @@ class CustomWorld {
       "Хедер" : new MainHeader(),
       "Страница профиля" : new Profile(),
     };
-    this.page = {
-      baseUrl: process.env.ROX
-    };
   }
-}
-setWorldConstructor(CustomWorld);
+} 
+setWorldConstructor(World)
