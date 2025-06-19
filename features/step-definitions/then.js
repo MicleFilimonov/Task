@@ -3,7 +3,7 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 
 
-
+// Проверка видиомсти 1-ого элементов в указанном месте (классе)
 Then("Я {string} {string} в {string}", async function (activity, element, location) {
 
     const object = this.pageObjects[location];
